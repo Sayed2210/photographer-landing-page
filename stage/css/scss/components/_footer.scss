@@ -1,0 +1,27 @@
+.footer {
+    padding: 100px 0;
+    background-color: $vintage-alt-color;
+    .container {
+        .wrapper {
+            @include flex-between;
+            p {
+                color: $beige-color;
+            }
+            .social {
+                @include flex-between;
+                a {
+                    display: block;
+                    margin-right: 10px;
+                    i {
+                        color: $beige-color;
+                        font-size: 1.8rem;
+                        @include smooth;
+                        &:hover {
+                            color: $beige-alt-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

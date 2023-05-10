@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backface-visibility",
+          "width: fit-content",
+          "-webkit-tap-highlight-color"
+        ]
+      }
+    ],
+    "highest-available-document-mode": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-aria": "off"
+      }
+    ]
+  }
+}

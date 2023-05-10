@@ -1,0 +1,9 @@
+@include keyFrame(moving-arrow) {
+    100% {
+        -o-transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}

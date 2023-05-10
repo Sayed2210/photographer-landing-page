@@ -1,0 +1,38 @@
+.follow {
+    padding: 50px 0;
+    background-color: $beige-color;
+    text-align: center;
+        h3 {
+            color: $beige-alt-color;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-bottom: 50px;
+        }
+        .images {
+            @include flex;
+            max-width: 100%;
+        }
+        > i {
+            display: block;
+            color: $beige-alt-color;
+            font-size: 1.6rem;
+            margin: 20px auto;
+        }
+        > a {
+            display: block;
+            color: $beige-alt-color;
+            font-style: italic;
+            font-size: 1.4rem;
+        }
+    }
+@include smScreen {
+    .follow {
+        .images {
+            a {
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

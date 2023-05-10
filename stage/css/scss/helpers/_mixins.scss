@@ -1,0 +1,77 @@
+//media Queries  xsmall screens
+@mixin xsScreen {
+    @media (max-width: 565px) {
+        @content;
+    }
+}
+//media Queries  small screens
+@mixin smScreen {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+//media Queries  medium screens
+@mixin mdScreen {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+//media Queries  large screens
+@mixin lgScreen {
+    @media (min-width: 962px) {
+        @content;
+    }
+}
+//media Queries  xlarge screens
+@mixin xlgScreen {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+//overlay mixin 
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+//perfixer mixin
+@mixin perfixer($property,$value,$perfixes: ()) {
+    @each $perfix in $perfixes {
+        #{"-"+$perfix+'-'+$property}:$value;
+    }
+    #{$property}:$value;
+}
+//animation mixin
+@mixin keyFrame($animation-name){
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+//display flex
+@mixin flex {
+    display: flex;
+}
+//flex center
+@mixin flex-center {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+}
+//flex space between
+@mixin flex-between {
+    @include flex;
+    align-items: center;
+    justify-content: space-between;
+}
+//transtion
+@mixin smooth {
+    transition: 0.3s;
+}

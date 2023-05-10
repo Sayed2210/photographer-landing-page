@@ -1,0 +1,47 @@
+.navbar-expand-lg {
+    z-index: 100000;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $beige-color;
+    .container {
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-link {
+                    color: $white-color;
+                    opacity: .6;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+                    .dropdown-item {
+                        color: $white-color;
+                        &:hover {
+                            background-color: $beige-color;
+                        }
+                    }
+                    .dropdown-divider {
+                        background-color: $beige-color;
+                    }
+                }
+            }
+        }
+    }
+}
+@include smScreen {
+    .navbar-expand-lg {
+        top: 0;
+    }
+}

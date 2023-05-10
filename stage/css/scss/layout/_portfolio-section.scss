@@ -1,0 +1,46 @@
+.portfolio-section {
+    padding: 100px 0;
+    background-color: $beige-color;
+    text-align: center;
+    .container {
+        > p {
+            color: $beige-alt-color;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .content {
+            @include flex;
+            align-items: center;
+            justify-content: space-between;
+            .box {
+                padding: 15px;
+                cursor: pointer;
+                color: $beige-alt-color;
+                flex-grow: 1;
+                img {
+                    opacity: .8;
+                    transition: .3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                a {
+                    display: block;
+                    h2 {
+                        font-weight: 700;
+                        color: $beige-alt-color;
+                        font-size: 1.6rem;
+                        margin: 25px 0;
+                    }
+                }
+                &:hover .fa-arrow-right {
+                    -webkit-animation: moving-arrow 0.5s linear infinite;
+                    animation: moving-arrow 0.5s linear infinite;
+                }
+            }
+            > div {
+                width: 40%;
+            }
+        }
+    }
+}
