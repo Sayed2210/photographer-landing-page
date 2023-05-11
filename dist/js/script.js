@@ -1,15 +1,19 @@
 AOS.init();
-// $(document).ready(function(){
-//     $('.owl-one').owlCarousel({
-//         animateOut: 'slideOutDown',
-//         animateIn: 'flipInX',
-//         items:1,
-//         margin:30,
-//         loop:true,
-//         stagePadding:30,
-//         smartSpeed:450,
-//         autoplay:true,
-//         autoplayTimeout:1000,
-//         autoplayHoverPause:true
-//     });
-//   });
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+  });

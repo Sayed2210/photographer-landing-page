@@ -7,3 +7,19 @@ img {
 a{
     text-decoration: none;
 }
+.bar {
+    span {
+        display: block;
+        background-color: $beige-alt-color;
+        width: 500px;
+        height: 1px;
+        margin: 0 auto 50px;
+    }
+}
+@include smScreen {
+    .bar {
+        span {
+            width: 60%;
+        }
+    }
+}

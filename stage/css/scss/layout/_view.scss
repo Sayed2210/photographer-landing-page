@@ -1,0 +1,17 @@
+.view {
+    padding: 50px 0;
+    background-color: $beige-color;
+    text-align: center;
+    color: $beige-alt-color;
+    .container {
+        h2 {
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+        p {
+            max-width: 700px;
+            margin: 50px auto;
+            line-height: 1.8;
+        }
+    }
+}

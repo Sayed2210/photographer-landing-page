@@ -1,0 +1,52 @@
+.form 
+    .container 
+        h2(data-aos="fade-right") Book Now 
+        p(data-aos="fade-left") Kindly share with us your Event Date and location to check date availability.
+        form(action="" data-aos="fade-down")
+            .mb-4
+                label.form-label Your Name
+                input.form-control(type='text' placeholder='Your Name' aria-label='Username' aria-describedby='addon-wrapping')
+            .mb-4
+                label.form-label Your Phone
+                input.form-control(type='text' placeholder='Your Phone' aria-label='Username' aria-describedby='addon-wrapping')
+            .mb-4
+                label.form-label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Your Email')
+                #emailHelp.form-text We'll never share your email with anyone else.
+            .mb-4
+                label.form-label(for='exampleInputEmail1') Data OF Event
+                input.form-control(type='text' placeholder='Date' aria-label='Username' aria-describedby='addon-wrapping')
+            .mb-4
+                label.form-label(for='exampleInputEmail1') Event Location
+                input.form-control(type='text' placeholder='City' aria-label='Username' aria-describedby='addon-wrapping')
+            .mb-4 
+                label.form-label Your Package
+                select.form-select(aria-label='Default select example')
+                    option(selected='') Open this select Package
+                    option(value='1') One
+                    option(value='2') Two
+                    option(value='3') Three
+            .mb-4 
+                label.form-label How Did You Know About Me
+                select.form-select(aria-label='Default select example')
+                    option(selected='')  select One
+                    option(value='1') One
+                    option(value='2') Two
+                    option(value='3') Three
+            .mb-4
+                label.form-label(for='exampleFormControlTextarea1') Example textarea
+                textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder="Tell us more details about your event like Venue , Date and expected time to start your big day ?")
+            .mb-4
+                label.form-label Choose Your Gift
+                .form-check
+                    input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                    label.form-check-label(for='flexCheckDefault1')
+                        | 10% Discount
+                .form-check
+                    input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                    label.form-check-label(for='flexCheckDefault2')
+                        |  Printed Album 30x60
+            button.main-btn(type='submit') Submit
+
+
+

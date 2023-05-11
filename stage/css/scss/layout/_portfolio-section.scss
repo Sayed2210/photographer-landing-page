@@ -3,6 +3,7 @@
     background-color: $beige-color;
     text-align: center;
     .container {
+        border-bottom: 1px solid $beige-alt-color;
         > p {
             color: $beige-alt-color;
             max-width: 600px;
@@ -12,6 +13,7 @@
             @include flex;
             align-items: center;
             justify-content: space-between;
+            padding-bottom: 50px;
             .box {
                 padding: 15px;
                 cursor: pointer;

@@ -1,0 +1,47 @@
+.feature {
+    padding: 50px  0;
+    background-color: $vintage-color;
+    .container {
+        .content {
+            @include flex-between;
+            .box {
+                text-align: center;
+                padding: 15px;
+                cursor: pointer;
+                color: $beige-color;
+                a {
+                    display: block;
+                    h2 {
+                        font-weight: 700;
+                        color: $beige-color;
+                        font-size: 1.6rem;
+                        margin: 25px 0;
+                    }
+                }
+                &:hover .fa-arrow-right {
+                    -webkit-animation: moving-arrow 0.5s linear infinite;
+                    animation: moving-arrow 0.5s linear infinite;
+                }
+                p {
+                    max-width: 250px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+@include smScreen {
+    .feature {
+        .container {
+            .content {
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                    p {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

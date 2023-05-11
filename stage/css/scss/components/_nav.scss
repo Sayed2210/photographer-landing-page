@@ -40,6 +40,22 @@
         }
     }
 }
+.clients {
+    .navbar-expand-lg {
+        .container {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-link {
+                        color: $beige-alt-color;
+                    }
+                    .dropdown-menu {
+                        background-color: $beige-alt-color;
+                    }
+                }
+            }
+        }
+    }
+}
 @include smScreen {
     .navbar-expand-lg {
         top: 0;

@@ -1,0 +1,49 @@
+.clients-items {
+    padding: 150px 0;
+    background-color: $beige-color;
+    .container {
+        @include flex-between;
+        flex-wrap: wrap;
+        .client {
+            width: 48%;
+            position: relative;
+            margin-bottom: 50px;
+            opacity: .8;
+            @include smooth;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: rgba($color: $black-color, $alpha: .15);
+            }
+            &:hover {
+                opacity: 1;
+            }
+            .info {
+                text-align: center;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                color: $beige-color;
+                > i {
+                    font-size: 2.5rem;
+                }
+                h2 {
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+                a {
+                    color: $beige-color;
+                }
+            }
+        }
+    }
+}
