@@ -59,5 +59,19 @@
 @include smScreen {
     .navbar-expand-lg {
         top: 0;
+        .container {
+            .navbar-collapse {
+                background-color: $beige-color;
+                padding: 15px;
+                .navbar-nav {
+                    .nav-link {
+                        color: $beige-alt-color;
+                    }
+                    .dropdown-menu {
+                        background-color: $beige-alt-color;
+                    }
+                }
+            }
+        }
     }
 }

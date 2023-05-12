@@ -27,6 +27,10 @@
             ::placeholder {
                 color: $beige-alt-color
             }
+            textarea {
+                resize: none;
+                height: 200px;
+            }
             select {
                 option {
                     color: $beige-alt-color;
@@ -37,6 +41,19 @@
             }
             :focus {
                 box-shadow: none;
+            }
+            .form-check-input:checked {
+                background-color: $beige-alt-color;
+            }
+        }
+    }
+}
+@include smScreen {
+    .form {
+        .container {
+            form {
+                width: 100%;
+                padding: 25px;
             }
         }
     }

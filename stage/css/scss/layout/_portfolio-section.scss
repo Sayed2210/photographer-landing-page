@@ -46,3 +46,18 @@
         }
     }
 }
+@include smScreen {
+    .portfolio-section {
+        .container {
+            .content {
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                }
+                > div {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
